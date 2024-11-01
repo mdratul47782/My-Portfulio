@@ -2,6 +2,109 @@
   font-family: "Agustina";
   src: url("./Agustina.woff") format("woff");
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+/* Apply Poppins font to navbar links, excluding the logo */
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400; /* Lightly bold for a modern feel */
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+.menu-icon {
+  font-family: 'Poppins', sans-serif;
+}
+/* Main Flexbox Layout for .home Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #2b2e3b;
+  color: white;
+}
+
+/* Content Styling */
+.home-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.home-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.home-content h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.home-sci a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Image Styling */
+.home-image {
+  max-width: 400px;
+  width: 100%;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h4 {
+    font-size: 18px;
+  }
+
+  .home-image {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h4 {
+    font-size: 16px;
+  }
+
+  .home-sci a {
+    font-size: 1.2rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1629,4 +1732,44 @@ h3 {
   height: auto;
   position: relative;
   top: -100px; /* Moves the image up by 10px */
+}
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content h3,
+  .home-content h4 {
+    font-size: 18px;
+  }
+
+  .home .img {
+    max-width: 80%;
+    margin: 10px auto;
+    position: static; /* Remove absolute positioning on small screens */
+  }
+
+  .home-sci a {
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h3,
+  .home-content h4 {
+    font-size: 24px;
+  }
+
+  .home .img {
+    max-width: 60%;
+    margin: auto;
+    left: 0;
+  }
 }
