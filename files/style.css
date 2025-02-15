@@ -1773,3 +1773,58 @@ h3 {
     left: 0;
   }
 }
+/* Add this to your existing CSS file */
+
+/* Responsive adjustments for project section */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image-box,
+  .project-details-box {
+    width: 100%;
+  }
+
+  .project-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image-box,
+  .project-details-box {
+    width: 100%;
+  }
+
+  .project-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-icons {
+    justify-content: center;
+  }
+
+  .project-main-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-main-info p,
+  .project-tools {
+    font-size: 0.875rem;
+  }
+
+  .project-icons a {
+    font-size: 1.5rem;
+  }
+}
